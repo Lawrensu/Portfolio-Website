@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/Lawrensu.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+    <meta name="description" content="Welcome to my first portfolio website"/>
+    <meta name="keywords" content="web developer, software engineer, computer science, fullstack developer, lawrensu, lawrence"/>
+
+    <title>Lawrence's Portfolio</title>
+  </head>
+  
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav btn" class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>          
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="#about">About</a></li>
+          <li><a class="mobile-nav__link" href="#featured">Featured</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+            </button>
+          </li>
+          <li><a class="mobile-nav__btn btn" href="#">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Nav -->
+
+    <main>
+      <!-- Profile -->
+      <section class="profile container">
+        <img class="profile__img" src="/Law.png" alt="Profile picture">
+
+        <h2 class="profile__subtitle">Hello, I am Law</h2>
+
+        <h1 class="profile__title">Fullstack Developer</h1>
+
+        <p class="profile__description">An upcoming passionate <strong>Fullstack Web Developer</strong> specialized in building dazzling pixel-perfect interactive websites/applications.</p>
+
+        <a class="profile__btn btn" href="#">Reach Out</a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+
+          <!-- Passion elaboration -->
+          <p class="about__description">An impending <strong>software engineer</strong> based in Malaysia, Sarawak. I am a huge Computer Science enthusiast.</p>
+
+          <!-- Current studies and education -->
+          <p class="about__description">Currently, I'm a first year <strong>computer science student</strong> at <strong>Swinburne University</strong> in Kuching, Sarawak.</p>
+
+          <!-- Future plans -->
+          <p class="about__description">I am working on side projects as a way to learn and master skills needed while pursuing my degree.</p>
+
+          <hr class="about__hr">
+
+          <h3 class="about__subtitle">Technologies</h3>
+
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">Tailwind CSS</li>
+            </ul>
+
+            <ul class="about__ul">
+              <li class="about__list">Python</li>
+              <li class="about__list">Bla</li>
+              <li class="about__list">Bla</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about__img-wrapper">
+          <img class="about__img" src="/me fr.jpg" alt="About Me Picture">
+        </div>
+      </section>
+
+      <!-- Featured -->
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured Project</h3>
+
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Project 1</h2>
+          <a aria-label="link featured projects" class="featured__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>
+          </a>
+        </div>
+
+        <p class="featured__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae rem ex minus et molestias repellat error, nesciunt commodi delectus qui cumque tempore recusandae libero ad dignissimos? Magnam architecto iusto porro?</p>
+
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech-Stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info"></li>
+              <li class="featured__info"></li>
+              <li class="featured__info"></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="featured__label">Project Type</h3>
+            <p class="featured__info"></p>
+          </div>
+
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info"></p>
+          </div>
+        </div>
+
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+          
+          <div class="featured__img-wrapper">
+            <img class="lazy" src="" alt="">
+
+          </div>
+        </div>
+      </section>
+       
+      <section class="projects container section">
+        <h2 class="projects__title">Projects</h2>
+
+        <p class="projects__description">These are other projects that I have worked on or still working on until now. Oh how I love creating stuff. You can check it out too! </p>
+
+        <div class="projects__container">
+          <!-- Project 1 -->
+          <h3 class="projects__work-title">Something</h3>
+  
+          <div class="projects__img-wrapper projects__image1">
+            <img class="lazy" src="" alt="">
+          </div>
+  
+          <div class="projects__work projects__content1">
+            <h3 class="projects__work-subtitle">Project title</h3>
+
+            <p class="projects__work-desc-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum illum consequatur in beatae alias nesciunt fugiat autem, odit iusto voluptatum quos dolore nobis asperiores, possimus debitis nihil quibusdam libero.</p>
+    
+            <p class="projects__work-desc-2">Bla bla bla</p>
+    
+            <a class="btn projects__btn" href="#">Website</a>
+          </div>
+  
+  
+          <!-- Project 2 -->
+          <h3 class="projects__work-title">Something 2</h3>
+  
+          <div class="projects__img-wrapper projects__image2">
+            <img class="lazy" src="" alt="">
+          </div>
+  
+          <div class="projects__work projects__content2">
+            <h3 class="projects__work-subtitle">Project title</h3>
+
+            <p class="projects__work-desc-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum illum consequatur in beatae alias nesciunt fugiat autem, odit iusto voluptatum quos dolore nobis asperiores, possimus debitis nihil quibusdam libero.</p>
+    
+            <p class="projects__work-desc-2">Bla bla bla</p>
+    
+            <a class="btn projects__btn" href="#">Website</a>
+          </div>
+        </div>
+
+      </section>
+      
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">+ Reach Out +</h2>
+        <p class="contact__description">Whether you are starting a project, have any inquiries or just want to connect, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+
+        <a class="contact__btn btn" href="#" target="_blank">Mail Me</a>
+
+        <div class="contact__social-media">
+          <a aria-label="link instagram" class="contact__sm-icon" href="https://www.instagram.com/law.rensu/?hl=en" target="_blank"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.805 8.277a1.08 1.08 0 1 0 0-2.16 1.08 1.08 0 0 0 0 2.16Z"></path>
+            <path d="M12 7.375a4.622 4.622 0 1 0 0 9.244 4.622 4.622 0 0 0 0-9.244Zm0 7.622a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"></path>
+            <path d="M12 4.622c2.403 0 2.688.009 3.637.052.57.007 1.136.112 1.671.31a2.982 2.982 0 0 1 1.708 1.708c.198.535.303 1.1.31 1.671.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637a4.982 4.982 0 0 1-.31 1.671 2.98 2.98 0 0 1-1.708 1.708 4.98 4.98 0 0 1-1.671.31c-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052a4.981 4.981 0 0 1-1.671-.31 2.981 2.981 0 0 1-1.708-1.708 4.982 4.982 0 0 1-.31-1.671c-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637c.007-.57.112-1.136.31-1.67a2.981 2.981 0 0 1 1.708-1.709 4.981 4.981 0 0 1 1.671-.31c.95-.043 1.234-.052 3.637-.052ZM12 3c-2.444 0-2.75.01-3.71.054a6.605 6.605 0 0 0-2.185.419 4.602 4.602 0 0 0-2.633 2.632 6.605 6.605 0 0 0-.418 2.185C3.01 9.25 3 9.556 3 12s.01 2.75.054 3.71c.015.747.157 1.486.419 2.185a4.602 4.602 0 0 0 2.632 2.633c.7.262 1.438.403 2.185.418.96.044 1.266.054 3.71.054s2.75-.01 3.71-.054a6.606 6.606 0 0 0 2.185-.419 4.6 4.6 0 0 0 2.633-2.632c.262-.7.403-1.438.418-2.185.044-.96.054-1.266.054-3.71s-.01-2.75-.054-3.71a6.603 6.603 0 0 0-.419-2.185 4.603 4.603 0 0 0-2.632-2.632 6.605 6.605 0 0 0-2.185-.418C14.75 3.01 14.444 3 12 3Z"></path>
+          </svg></a>
+
+          <a aria-label="link youtube channel" class="contact__sm-icon" href="https://www.youtube.com/c/Lawrensu" target="_blank"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.057 6.943a2.625 2.625 0 0 0-1.852-1.852C18.57 4.648 12 4.648 12 4.648s-6.57 0-8.205.443a2.625 2.625 0 0 0-1.853 1.852 27.097 27.097 0 0 0-.442 5.055 27.107 27.107 0 0 0 .442 5.055 2.625 2.625 0 0 0 1.853 1.853c1.635.442 8.205.442 8.205.442s6.57 0 8.205-.442a2.625 2.625 0 0 0 1.852-1.853 27.1 27.1 0 0 0 .443-5.055 27.1 27.1 0 0 0-.443-5.055ZM9.9 15.148v-6.3l5.452 3.15-5.452 3.15Z"></path>
+          </svg></a>
+
+          <a aria-label="link github" class="contact__sm-icon" href="https://github.com/Lawrensu" target="_blank"><svg  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12 1.5a10.5 10.5 0 0 0-3.323 20.46c.525.098.75-.225.75-.502v-1.785c-2.917.63-3.532-1.41-3.532-1.41a2.782 2.782 0 0 0-1.215-1.538c-.953-.645.075-.637.075-.637a2.205 2.205 0 0 1 1.605 1.087 2.25 2.25 0 0 0 3.06.87c.042-.532.277-1.03.66-1.402-2.325-.27-4.778-1.17-4.778-5.19a4.05 4.05 0 0 1 1.08-2.82 3.75 3.75 0 0 1 .105-2.775s.878-.285 2.888 1.072a9.975 9.975 0 0 1 5.25 0c2.002-1.357 2.88-1.072 2.88-1.072a3.75 3.75 0 0 1 .105 2.775 4.05 4.05 0 0 1 1.08 2.82c0 4.035-2.453 4.92-4.793 5.182a2.499 2.499 0 0 1 .713 1.943v2.88c0 .345.187.607.75.502A10.5 10.5 0 0 0 12 1.5Z" clip-rule="evenodd"></path>
+          </svg></a>
+
+          <a aria-label="link linkedin" class="contact__sm-icon" href="https://www.linkedin.com/in/lawrence-lian/" target="_blank"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.65 3H4.35C3.6 3 3 3.6 3 4.275V19.65c0 .675.6 1.275 1.35 1.275h15.3c.75 0 1.35-.6 1.35-1.275V4.275C21 3.6 20.4 3 19.65 3ZM8.325 18.3H5.7V9.75h2.625v8.55ZM7.05 8.55a1.584 1.584 0 0 1-1.575-1.575c0-.9.675-1.575 1.575-1.575.825 0 1.575.675 1.575 1.575 0 .9-.75 1.575-1.575 1.575Zm11.325 9.675H15.75v-4.2c0-.975 0-2.325-1.425-2.325s-1.575 1.125-1.575 2.175v4.275h-2.625v-8.4H12.6v1.125h.075c.375-.675 1.275-1.425 2.55-1.425 2.7 0 3.225 1.8 3.225 4.125v4.65h-.075Z"></path>
+          </svg></a>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer container section">
+      <h3 class="footer__title">[ Lawrence Lian ]</h3>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

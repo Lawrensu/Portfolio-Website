@@ -1,0 +1,142 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.contact__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+}
+
+.contact__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.contact__btn {
+    font-size: var(--size-sm);
+}
+
+.contact__social-media {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Animate the icon when hover */
+.contact__sm-icon {
+    color: var(--clr-slate600);
+    width: 2rem;
+    height: 2rem;
+
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact__sm-icon:hover {
+    color: var(--clr-rose);
+    transform: scale(1.2);
+}
+
+/* Mobile first style is the standard (using min-width) */
+/* If Desktop first style then (max-width) */
+
+/* xs  */
+@media (min-width: 475px) {
+    .contact {
+        gap: 1.5rem;
+    }
+    
+    .contact__title {
+        font-size: var(--size-3xl);
+    }
+    
+    .contact__description {
+        font-size: var(--size-base);
+    }
+    
+    .contact__social-media {
+        gap: 2rem;
+    }
+    
+    .contact__sm-icon {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .contact__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .contact__sm-icon {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+    .contact__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .contact__description {
+        font-size: var(--size-lg);
+    }
+
+    .contact__social-media {
+        gap: 2.5rem;
+    }
+    
+    /* Animate the icon when hover */
+    .contact__sm-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .contact__btn {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+    .contact {
+        gap: 1.5rem;
+    }
+    
+    .contact__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .contact__description {
+        font-size: var(--size-xl);
+    }
+
+    .contact__social-media {
+        gap: 3rem;
+    }
+    
+    /* Animate the icon when hover */
+    .contact__sm-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .contact__btn {
+        font-size: var(--size-xl);
+    }
+} 
+
+/* 2xL */
+ /* @media (min-width: 1536px) { } */
