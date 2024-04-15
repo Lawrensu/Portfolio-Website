@@ -19,12 +19,6 @@
     width: var(--size-2xl);
     height: var(--size-2xl);
     display: block;
-
-    transition: color 0.3s;
-}
-
-.header__bars:hover {
-    color: var(--clr-rose);
 }
 
 /* xs */ 
