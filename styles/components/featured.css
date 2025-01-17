@@ -21,6 +21,12 @@
     display: inline-block;
     width: var(--size-2xl);
     height: var(--size-2xl);
+
+    transition: color 0.3s;
+}
+
+.featured__link:hover, .featured__link:active {
+    color: var(--clr-rose);
 }
 
 .featured__description {
