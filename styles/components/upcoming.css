@@ -1,0 +1,24 @@
+/* Mobile first style is the standard (using min-width) */
+/* If Desktop first style then (max-width) */
+
+/* xs */ 
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+
+/* Lg */
+/* @media (min-width: 1024px) {} */
+
+
+/* xL */
+/* @media (min-width: 1280px) {}  */
+
+
+/* 2xL */
+ /* @media (min-width: 1536px) { } */
