@@ -5,7 +5,7 @@
 .projects__title {
     font-size: var(--size-2xl);
     color: var(--clr-light);
-    text-align: center;
+    text-align: left;
 }
 
 .projects__description {

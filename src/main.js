@@ -5,6 +5,7 @@ import '../styles/components/profile.css';
 import '../styles/components/about.css';
 import '../styles/components/featured.css';
 import '../styles/components/projects.css';
+import '../styles/components/multimedia.css';
 import '../styles/components/contact.css';
 import '../styles/components/footer.css';
 import '../styles/components/mobile-nav.css';
